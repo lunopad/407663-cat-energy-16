@@ -16,14 +16,85 @@
     </nav>
     <h1 class="page-title">Подбор программы</h1>
     <p class="page-desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="program">
-      <section class="program-main">
-        <h2 class="program-main__title visually-hidden">Основные данные</h2>
+    <form class="program" method="post" name="program" action="https://echo.htmlacademy.ru">
+      <section class="program__section">
         <p>
-          <label class="program__label" for="first-name">Имя*:</label>
-          <input class="review__input" id="first-name" name="first-name" type="text" value="" placeholder="Петр" required>
+          <label class="program__label" for="cat-name">Имя*:</label>
+          <input class="program__input" id="cat-name" name="cat-name" type="text" value="" placeholder="Барсик" required>
+        </p>
+        <p>
+          <label class="program__label" for="weight">Вес (кг)*:</label>
+          <input class="program__input" id="weight" name="weight" type="text" value="" placeholder="7" required>
+        </p>
+        <p>
+          <label class="program__label" for="age">Возраст*:</label>
+          <input class="program__input" id="age" name="age" type="text" value="" placeholder="7" required>
         </p>
       </section>
+      <section class="program__sectione">
+        <p>
+          <input id="weight-loss" type="radio" name="program-type" value="weight-loss" checked> <label class="program__label" for="weight-loss">Похудение</label>
+        </p>
+        <p>
+          <input id="weight-gain" type="radio" name="program-type" value="weight-gain"> <label class="program__label" for="weight-gain">Набор массы</label>
+        </p>
+        <p>
+          <input id="dont-know" type="radio" name="program-type" value="dont-know"> <label class="program__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+        </p>
+      </section>
+      <section class="program__section">
+        <h2 class="program__title visually hidden">Контактные данные (владельца кота)</h2>
+        <p>
+          <label class="program__label" for="email">E-mail*:</label>
+          <input class="program__input program__input--email" id="email" name="email" type="email" value="" placeholder="kuklachev@gmail.com" required>
+        </p>
+        <p>
+          <label class="program__label" for="tel">Телефон*:</label>
+          <input class="program__input program__input--tel" id="tel" name="tel" type="tel" value="" placeholder="8(960)900-60-90" required>
+        </p>
+      </section>
+      <section class="program__section">
+        <textarea class="commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </section>
+      <section class="program__section">
+        <p>
+          <input id="sugar" type="checkbox" name="additional" value="sugar" checked> <label class="program__label" for="sugar">Сахарозаменитель</label>
+        </p>
+        <p>
+          <input id="water" type="checkbox" name="additional" value="water"> <label class="program__label" for="water">Питьевая вода</label>
+        </p>
+        <p>
+          <input id="milk" type="checkbox" name="additional" value="milk"> <label class="program__label" for="milk">Молоко</label>
+        </p>
+        <p>
+          <input id="vitamins" type="checkbox" name="additional" value="vitamins"> <label class="program__label" for="vitamins">Витамины</label>
+        </p>
+      </section>
+      <button class="button">Отправить заявку</button>
+      <p class="required">* - Обязательные поля</p>
     </form>
+    <section class="contacts">
+      <p class="contacts__call">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="map"></div>
+    </section>
+    <footer class="main-footer">
+      <p class="footer__desc">Cat Energy</p>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">В контакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="https://instagram.com/htmlacademy">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="https://facebook.com/htmlacademy">Фейсбук</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <span class="copyright__desc">HTML Academy</span>
+        <img class="copyright__image" src="">
+      </div>
+    </footer>
   </body>
 </html>
