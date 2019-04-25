@@ -23,8 +23,8 @@
     </header>
     <main class="page-main">
       <div class="container">
-        <h1 class="page-title">Подбор программы</h1>
-        <p class="page-desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form" method="post" name="form" action="https://echo.htmlacademy.ru">
           <section class="form__section">
             <div class="form__group">
@@ -52,7 +52,7 @@
             </div>
           </section>
           <section class="form__section">
-            <h2 class="form__title visually hidden">Контактные данные (владельца кота)</h2>
+            <h2 class="form__title">Контактные данные (владельца кота)</h2>
             <div class="form__group">
               <label class="form__label" for="email">E-mail*:</label>
               <input class="form__input form__input--email" id="email" name="email" type="email" value="" placeholder="kuklachev@gmail.com" required>
@@ -63,20 +63,22 @@
             </div>
           </section>
           <section class="form__section">
-            <textarea class="commentary" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <h2 class="form__title">Комментарий</h2>
+            <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </section>
           <section class="form__section">
+            <h2 class="form__title">Дополнительно</h2>
             <div class="form__group">
-              <input id="sugar" type="checkbox" name="additional" value="sugar" checked> <label class="form__label" for="sugar">Сахарозаменитель</label>
+              <input class="form__input form__input--checkbox" id="sugar" type="checkbox" name="additional" value="sugar" checked> <label class="form__label" for="sugar">Сахарозаменитель</label>
             </div>
             <div class="form__group">
-              <input id="water" type="checkbox" name="additional" value="water"> <label class="form__label" for="water">Питьевая вода</label>
+              <input class="form__input form__input--checkbox" id="water" type="checkbox" name="additional" value="water"> <label class="form__label" for="water">Питьевая вода</label>
             </div>
             <div class="form__group">
-              <input id="milk" type="checkbox" name="additional" value="milk"> <label class="form__label" for="milk">Молоко</label>
+              <input class="form__input form__input--checkbox" id="milk" type="checkbox" name="additional" value="milk"> <label class="form__label" for="milk">Молоко</label>
             </div>
             <div class="form__group">
-              <input id="vitamins" type="checkbox" name="additional" value="vitamins"> <label class="form__label" for="vitamins">Витамины</label>
+              <input class="form__input form__input--checkbox" id="vitamins" type="checkbox" name="additional" value="vitamins"> <label class="form__label" for="vitamins">Витамины</label>
             </div>
           </section>
           <button class="button">Отправить заявку</button>
@@ -91,7 +93,7 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <h2 class="footer__desc">Cat Energy</h2>
+        <h2 class="page-footer__desc">Cat Energy</h2>
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">В контакте</a>
